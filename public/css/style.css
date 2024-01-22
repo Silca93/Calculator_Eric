@@ -6,6 +6,7 @@ body {
     align-items: center;
     flex-direction: column;
     background-color: rgb(70, 65, 65);
+    background-image: url(../img/vintage-desk-with-antique-books-and-fountain-pen-il9o4m6tqlogmivz.jpg);
 
 }
 .main {
@@ -15,6 +16,7 @@ body {
     background-color: gray;
     overflow: hidden;
     border-radius: 15px;
+    
 }
 
 h1{
@@ -28,9 +30,14 @@ h1{
     width: 100%;
     height: 20%;
     background-color: lightgray;
+    perspective: 1000px;
+    transform: rotateX(-40deg);
+
     text-align: center;
     font-size: 25px;
-    border: ;
+    border: inset solid black 10px;
+    font-family:'Orbitron', sans-serif;;
+    color: rgb(195, 4, 4);
     
 
 }
@@ -41,6 +48,7 @@ h1{
     width: 100%;
     height: 15%;
     gap: 1px;
+    box-shadow: 24px -7px 8px -9px;
 
 }
 .operatorPlus {
@@ -49,7 +57,8 @@ h1{
     height: 100%;
     background-color: rgb(59, 59, 59);
     font-size: 25px;
-    color: white;   
+    color: white;  
+    cursor: pointer; 
 
 
 }
@@ -60,6 +69,7 @@ h1{
     background-color: rgb(59, 59, 59);
     font-size: 25px;
     color: white;
+    cursor: pointer;
 
 
 }
@@ -70,6 +80,7 @@ h1{
     background-color: rgb(59, 59, 59);
     font-size: 25px;
     color: white;
+    cursor: pointer;
 
 
 }
@@ -80,6 +91,7 @@ h1{
     background-color: rgb(59, 59, 59);
     font-size: 25px;
     color: white;
+    cursor: pointer;
 
 
 }
@@ -90,6 +102,7 @@ h1{
     background-color: rgb(59, 59, 59);
     color: white;
     font-size: 25px;
+    cursor: pointer;
 
 
 }
@@ -100,6 +113,7 @@ h1{
     height: 17%;
     width: 60%;
     background-color: gray;
+    
 }
 
 .one {
@@ -109,6 +123,14 @@ h1{
     width: 33%;
     border-radius: 15px;
     background-color: antiquewhite;
+    box-shadow: 0px 3px 0px #999999;
+    cursor: pointer;
+    
+}
+.one:active {
+    background: rgb(189, 3, 3);
+    opacity: 0.5;
+
 }
 .two {
     font-size: 25px;
@@ -118,6 +140,13 @@ h1{
     height: 100%;
     width: 33%;
     background-color: antiquewhite;
+    box-shadow: 0px 3px 0px #999999;
+    cursor: pointer;
+}
+.two:active {
+    background: rgb(189, 3, 3);
+    opacity: 0.5;
+
 }
 .three {
     font-size: 25px;
@@ -127,6 +156,13 @@ h1{
     height: 100%;
     width: 33%;
     background-color: antiquewhite;
+    box-shadow: 0px 3px 0px #999999;
+    cursor: pointer;
+}
+.three:active {
+    background: rgb(189, 3, 3);
+    opacity: 0.5;
+
 }
 
 .numberRow2{
@@ -146,6 +182,13 @@ h1{
     height: 100%;
     width: 33%;
     background-color: antiquewhite;
+    box-shadow: 0px 3px 0px #999999;
+    cursor: pointer;
+}
+.four:active {
+    background: rgb(189, 3, 3);
+    opacity: 0.5;
+
 }
 .five {
     font-size: 25px;
@@ -155,6 +198,13 @@ h1{
     height: 100%;
     width: 33%;
     background-color: antiquewhite;
+    box-shadow: 0px 3px 0px #999999;
+    cursor: pointer;
+}
+.five:active {
+    background: rgb(189, 3, 3);
+    opacity: 0.5;
+
 }
 .six {
     font-size: 25px;
@@ -164,6 +214,13 @@ h1{
     height: 100%;
     width: 33%;
     background-color: antiquewhite;
+    box-shadow: 0px 3px 0px #999999;
+    cursor: pointer;
+}
+.six:active {
+    background: rgb(189, 3, 3);
+    opacity: 0.5;
+
 }
 
 .numberRow3{
@@ -181,6 +238,13 @@ h1{
     height: 100%;
     width: 33%;
     background-color: antiquewhite;
+    box-shadow: 0px 3px 0px #999999;
+    cursor: pointer;
+}
+.seven:active {
+    background: rgb(189, 3, 3);
+    opacity: 0.5;
+
 }
 .eight {
     font-size: 25px;
@@ -190,6 +254,13 @@ h1{
     height: 100%;
     width: 33%;
     background-color: antiquewhite;
+    box-shadow: 0px 3px 0px #999999;
+    cursor: pointer;
+}
+.eight:active {
+    background: rgb(189, 3, 3);
+    opacity: 0.5;
+
 }
 .nine {
     font-size: 25px;
@@ -199,8 +270,15 @@ h1{
     height: 100%;
     width: 33%;
     background-color: antiquewhite;
+    box-shadow: 0px 3px 0px #999999;
+    cursor: pointer;
 }
 
+.nine:active {
+    background: rgb(189, 3, 3);
+    opacity: 0.5;
+
+}
 .lastrow {
     display: flex;
     height: 15%;
@@ -216,6 +294,12 @@ h1{
     height: 100%;
     width: 33%;
     background-color: antiquewhite;
+    cursor: pointer;
+}
+.zero:active {
+    background: rgb(189, 3, 3);
+    opacity: 0.5;
+
 }
 .coma {
     font-size: 25px;
@@ -225,6 +309,12 @@ h1{
     height: 100%;
     width: 33%;
     background-color: antiquewhite;
+    cursor: pointer;
+}
+.coma:active {
+    background: rgb(189, 3, 3);
+    opacity: 0.5;
+
 }
 .AC {
     font-size: 25px;
@@ -235,6 +325,12 @@ h1{
     width: 33%;
     background-color: antiquewhite;
     font-size: 20px;
+    cursor: pointer;
+}
+.AC:active {
+    background: rgb(189, 3, 3);
+    opacity: 0.5;
+
 }
 
 .numberRow3{
