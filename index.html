@@ -47,7 +47,7 @@
             <input type="button" class="zero" value="0" onclick="display.value += '0' ">
             <input type="button" class="coma" value="." onclick="display.value += '.' ">
             <input type="button" class="AC" value="AC" onclick="display.value = '' ">
-            
+            <audio id="audio" src="./public/img/light-switch-156813.mp3"></audio>
             
         </div>
 
@@ -60,16 +60,33 @@
         <script>
             let keyboard = document.querySelector(".equals")
 
-            document.body.addEventListener("keypress", (ev) =>{
+            document.body.addEventListener("keydown", (ev) =>{
 
             console.log(ev.key);    
             if (ev.key == 'Enter'){
                 display.value = eval(display.value)
+            }else if (ev.key == 'c'){
+                display.value = ''
             }
      
             } ) 
     
             
+        </script>
+        
+
+        <script>
+            let play = document.getElementsByTagName('input');
+              function typeSound () {
+                let myAudio = new Audio("new-light-switch.mp3");
+                myAudio.play();
+              } 
+                for(let i = 0; i < play.length; i++) {
+                play[i].addEventListener('click', typeSound);
+                } 
+                
+
+        
         </script>
     </div>
     
