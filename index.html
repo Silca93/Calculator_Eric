@@ -17,6 +17,8 @@
         <input type="text" class="display" id="display" name="display">
         </input>
         <div class="operators">
+             <!-- utilisation de la methode onclick partout dans le html afin de retourner la valeur de chaque input directement
+             dans le input donc l'id est display. chaque value est concat sinon elle ecraserait les value precedentes -->
             <input type= button class="operatorPlus" value="+" onclick="display.value += '+'">
             <input type= button class="operatorMinus" value="-" onclick="display.value += '-'">
             <input type= button class="operatorTimes" value="*" onclick="display.value += '*' ">
@@ -54,14 +56,15 @@
         
         
 
-        
-
+<!--         
+         methode eval pour resoudre toutes les oerations automatiquement -->
         <input type="button" class="equals" value="=" onclick="display.value = eval(display.value)">
         <script>
+            // script pour pouvoir se servir du keyboard afin dutiliser entree et C 
             let keyboard = document.querySelector(".equals")
-
+            
             document.body.addEventListener("keydown", (ev) =>{
-
+            // ce log permet de verfifier si la fonction log bien la value de ma touche
             console.log(ev.key);    
             if (ev.key == 'Enter'){
                 display.value = eval(display.value)
@@ -76,11 +79,13 @@
         
 
         <script>
+            // script permet de rajouter un son a chaque touche 
             let play = document.getElementsByTagName('input');
               function typeSound () {
                 let myAudio = new Audio("new-light-switch.mp3");
                 myAudio.play();
               } 
+            //   loop for pour iterer toutes les touches input de la calculette
                 for(let i = 0; i < play.length; i++) {
                 play[i].addEventListener('click', typeSound);
                 } 
