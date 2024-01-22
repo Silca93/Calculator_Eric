@@ -11,42 +11,49 @@
     <!-- Your HTML content goes here -->
     <h1>Calculator</h1>
     <div class="main">
-        <div class="screen">
-        </div>
+        <input type="text" class="display" id="display" name="display">
+        </input>
         <div class="operators">
-            <div class="operatorPlus">+
-                
-            </div>
-            <div class="operatorMinus">-</div>
-            <div class="operatorTimes">*</div>
-            <div class="operatorBy">/</div>
-            <div class="operatorPercnt">%</div>
+            <input type= button class="operatorPlus" value="+" onclick="display.value += '+'">
+            <input type= button class="operatorMinus" value="-" onclick="display.value += '-'">
+            <input type= button class="operatorTimes" value="*" onclick="display.value += '*' ">
+            <input type= button class="operatorBy" value="/" onclick="display.value += '/'">
+            <input type= button class="operatorPercnt" value="%" onclick="display.value += '%' ">
+            
         </div>
+        
         <div class="numberRow1">
-            <div class="one">1</div>
-            <div class="two">2</div>
-            <div class="three">3</div>
+            <input type="button" class="one" value ="1" onclick= "display.value +='1' ">
+            <input type="button" class="two" value = "2" onclick= "display.value +='2' ">
+            <input type="button" class="three" value = "3" onclick= "display.value +='3' ">
+            
         </div>
+        
         <div class="numberRow2">
-            <div class="four">4</div>
-            <div class="five">5</div>
-            <div class="six">6</div>
+            <input type="button" class="four" value ="4" onclick= "display.value +='4' ">
+            <input type="button" class="five" value = "5" onclick= "display.value +='5' ">
+            <input type="button" class="six" value = "6" onclick= "display.value +='6' ">
+            
         </div>
         <div class="numberRow3">
-            <div class="seven">7</div>
-            <div class="eight">8</div>
-            <div class="nine">9</div>
+            <input type="button" class="seven" value ="7" onclick= "display.value +='7' ">
+            <input type="button" class="eight" value = "8" onclick= "display.value +='8' ">
+            <input type="button" class="nine" value = "9" onclick= "display.value +='9' ">
         </div>
         <div class="lastrow">
-            <div class="zero">0</div>
-            <div class="coma">.</div>
-            <div class="AC">AC</div>
+            <input type="button" class="zero" value="0" onclick="display.value += '0' ">
+            <input type="button" class="coma" value="." onclick="display.value += '.' ">
+            <input type="button" class="AC" value="AC" onclick="display.value = '' ">
+            
             
         </div>
 
         
+        
 
+        
 
+        <input type="button" class="equals" value="=" onclick="display.value = eval(display.value)">
     </div>
     
 
